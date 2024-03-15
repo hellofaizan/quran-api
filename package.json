@@ -2,8 +2,8 @@
   "name": "quran-api",
   "version": "1.0.0",
   "main": "api/server.js",
-  "repository": "https://github.com/sutanlab/quran-api.git",
-  "author": "Sutan Nasution. <sutan.gnst@gmail.com>",
+  "repository": "https://github.com/hellofaizan/quran-api.git",
+  "author": "HelloFaizan. <hellofaizan.tech>",
   "license": "MIT",
   "private": false,
   "scripts": {
@@ -20,6 +20,6 @@
   "devDependencies": {
     "eslint": "^8.17.0",
     "isomorphic-fetch": "^3.0.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^3.1.0"
   }
 }

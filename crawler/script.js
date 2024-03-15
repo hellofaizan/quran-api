@@ -18,7 +18,7 @@ const getSurah = surah => {
   const apiUrl = `${SOURCE_API_BASEURL}/surah/${surah}/editions/${editions.join(',')}`;
   console.log(`> Prepare surah: ${surah} (${apiUrl})`);
 
-  const action = async() => {
+  const action = async () => {
     try {
       const data = await Promise.race([
         fetch(apiUrl),
@@ -42,11 +42,11 @@ const preBismillahHandler = ayah => {
     '%u0628%u0650%u0633%u0652%u0645%u0650 %u0627%u0644%u0644%u0651%u064e%u0647%u0650 %u0627%u0644%u0631%u0651%u064e%u062d%u0652%u0645%u064e%u0670%u0646%u0650 %u0627%u0644%u0631%u0651%u064e%u062d%u0650%u064a%u0645%u0650': /%u0628%u0650%u0633%u0652%u0645%u0650 %u0627%u0644%u0644%u0651%u064e%u0647%u0650 %u0627%u0644%u0631%u0651%u064e%u062d%u0652%u0645%u064e%u0670%u0646%u0650 %u0627%u0644%u0631%u0651%u064e%u062d%u0650%u064a%u0645%u0650/gi,
     '%u0628%u0651%u0650%u0633%u0652%u0645%u0650 %u0627%u0644%u0644%u0651%u064e%u0647%u0650 %u0627%u0644%u0631%u0651%u064e%u062d%u0652%u0645%u064e%u0670%u0646%u0650 %u0627%u0644%u0631%u0651%u064e%u062d%u0650%u064a%u0645%u0650': /%u0628%u0651%u0650%u0633%u0652%u0645%u0650 %u0627%u0644%u0644%u0651%u064e%u0647%u0650 %u0627%u0644%u0631%u0651%u064e%u062d%u0652%u0645%u064e%u0670%u0646%u0650 %u0627%u0644%u0631%u0651%u064e%u062d%u0650%u064a%u0645%u0650/gi
   };
-  const [,regEx] = Object.entries(replacer).find(([key]) => ayah.includes(key)) || [];
+  const [, regEx] = Object.entries(replacer).find(([key]) => ayah.includes(key)) || [];
   return `${regEx ? ayah.replace(regEx, '') : ayah}`.trim();
 };
 
-const operate = async(surah, tafsirSurah = {}, tryFlag = false) => {
+const operate = async (surah, tafsirSurah = {}, tryFlag = false) => {
   const { asma, keterangan, urut } = tafsirSurah;
   try {
     const responseText = await (await getSurah(surah)).text();
@@ -68,22 +68,17 @@ const operate = async(surah, tafsirSurah = {}, tryFlag = false) => {
         short: asma.trim(),
         long: arab.name.trim(),
         transliteration: {
-          en: arab.englishName.trim(),
-          id: activeSurah.latin.trim()
+          en: arab.englishName.trim()
         },
         translation: {
-          en: arab.englishNameTranslation.trim(),
-          id: activeSurah.id.trim()
+          en: arab.englishNameTranslation.trim()
         }
       },
       revelation: {
         arab: arab.revelationType === 'Meccan'
           ? '%u0645%u0643%u0629'
           : '%u0645%u062F%u064A%u0646%u0629',
-        en: arab.revelationType,
-        id: arab.revelationType === 'Meccan'
-          ? 'Makkiyyah'
-          : 'Madaniyyah'
+        en: arab.revelationType
       },
       tafsir: {
         id: (() => {
@@ -102,8 +97,7 @@ const operate = async(surah, tafsirSurah = {}, tryFlag = false) => {
           }
         },
         translation: {
-          en: 'In the name of Allah, the Entirely Merciful, the Especially Merciful.',
-          id: 'Dengan nama Allah Yang Maha Pengasih, Maha Penyayang.'
+          en: 'In the name of Allah, the Entirely Merciful, the Especially Merciful.'
         },
         audio: {
           primary: 'https://cdn.alquran.cloud/media/audio/ayah/ar.alafasy/1',
@@ -142,23 +136,17 @@ const operate = async(surah, tafsirSurah = {}, tryFlag = false) => {
             arab: arab.number !== 1 && idx === 0
               ? preBismillahHandler(arabText)
               : arabText.trim(),
-            transliteration: {
-              en: transliteration.ayahs[idx].text.trim()
-            }
+            en: transliteration.ayahs[idx].text.trim()
           },
           translation: {
-            en: english.ayahs[idx].text.trim(),
-            id: activeAyah.text.id.trim()
+            en: english.ayahs[idx].text.trim()
           },
           audio: {
             primary: ayah.audio,
             secondary: ayah.audioSecondary
           },
-          tafsir: {
-            id: {
-              short: tafsir.short.trim(),
-              long: tafsir.long.trim()
-            }
+          image: {
+            primary: ayah.image
           }
         };
       })
@@ -194,8 +182,8 @@ async function main() {
   process.stdout.write('\n> Writing Data..');
 
   const data = JSON.stringify({
-    license: '(MIT) Sutan Nasution <sutan.gnst@gmail.com>',
-    source: 'https://github.com/sutanlab/quran-api',
+    license: 'helloFaizan <hellofaizan.tech>',
+    source: 'https://github.com/hellofaizan/quran-api',
     audioEdition: 'Syekh. Mishary Rashid Al-Afasy',
     data: response
   }, null, 2);
