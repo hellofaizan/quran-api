@@ -22,6 +22,10 @@ router.get('/', (req, res) => res.status(200).send({
       pattern: '/surah/{surah}/{ayah}',
       example: '/surah/18/60?page=1&limit=30'
     },
+    aayahRangeInSurah: {
+      pattern: '/surah/{surah}/{ayahStart}-{ayahEnd}',
+      example: '/surah/114/1-6?page=1&lim'
+    },
     spesificJuz: {
       pattern: '/juz/{juz}',
       example: '/juz/30?page=1&limit=30'
