@@ -1,6 +1,7 @@
 const { Router } = require('express');
 
 const { caching } = require('./middlewares');
+const authMiddleware = require('./middlewares/auth');
 const SurahHandler = require('./handlers/surah');
 const JuzHandler = require('./handlers/juz');
 
@@ -10,6 +11,9 @@ router.use((req, res, next) => {
   res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=86400, stale-while-revalidate');
   next();
 });
+
+// Apply auth middleware to all routes
+router.use(authMiddleware);
 
 router.get('/', (req, res) => res.status(200).send({
   surah: {

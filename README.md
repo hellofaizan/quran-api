@@ -12,7 +12,22 @@ This API data source comes from the combination of several parameters from [api.
 - [x] Audio (***Syekh. Mishary Rashid Al-Afasy*** murrotal edition)
 - [x] Pagination support for all endpoints
 - [x] Ayah range support
+- [x] Bearer token authentication
 - [ ] Tafsir surahs and verses
+
+### Authentication
+All API endpoints require authentication using a Bearer token. Include the token in the Authorization header of your requests:
+
+```http
+Authorization: Bearer your-token-here
+```
+
+Example using curl:
+```bash
+curl -H "Authorization: Bearer your-token-here" https://api-url/surah/1
+```
+
+If no token is provided or if the format is incorrect, the API will respond with a 401 Unauthorized status.
 
 ### Data Source
 - [api.alquran.cloud](https://api.alquran.cloud) = Quran, Meta Verses, Audio.
@@ -28,6 +43,7 @@ This API data source comes from the combination of several parameters from [api.
     - `page` (optional, default: 1)
     - `limit` (optional, default: 30)
   - Example: `/surah?page=1&limit=10`
+  - Requires: Bearer token authentication
 
 #### Specific Surah
 - `GET /surah/{surah}`
@@ -36,11 +52,13 @@ This API data source comes from the combination of several parameters from [api.
     - `page` (optional, default: 1)
     - `limit` (optional, default: 10)
   - Example: `/surah/1?page=1&limit=20`
+  - Requires: Bearer token authentication
 
 #### Specific Ayah or Ayah Range
 - `GET /surah/{surah}/{ayah}`
   - Returns a specific ayah from a surah
   - Example: `/surah/2/255`
+  - Requires: Bearer token authentication
 - `GET /surah/{surah}/{startAyah-endAyah}`
   - Returns a range of ayahs from a surah
   - Format: startAyah-endAyah (must be valid verse numbers)
@@ -52,6 +70,7 @@ This API data source comes from the combination of several parameters from [api.
     - Surah information
     - Ayah range details (start, end, total)
     - All verses in the range with Arabic text, transliteration, translation, and audio
+  - Requires: Bearer token authentication
 
 #### Juz Information
 - `GET /juz/{juz}`
@@ -60,6 +79,7 @@ This API data source comes from the combination of several parameters from [api.
     - `page` (optional, default: 1)
     - `limit` (optional, default: 10)
   - Example: `/juz/30?page=1&limit=20`
+  - Requires: Bearer token authentication
 
 ### Response Format
 
