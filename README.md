@@ -11,6 +11,7 @@ This API data source comes from the combination of several parameters from [api.
 - [x] Verses meta (juz, sajda, manzil, etc)
 - [x] Audio (***Syekh. Mishary Rashid Al-Afasy*** murrotal edition)
 - [x] Pagination support for all endpoints
+- [x] Ayah range support
 - [ ] Tafsir surahs and verses
 
 ### Data Source
@@ -36,10 +37,21 @@ This API data source comes from the combination of several parameters from [api.
     - `limit` (optional, default: 10)
   - Example: `/surah/1?page=1&limit=20`
 
-#### Specific Ayah
+#### Specific Ayah or Ayah Range
 - `GET /surah/{surah}/{ayah}`
   - Returns a specific ayah from a surah
   - Example: `/surah/2/255`
+- `GET /surah/{surah}/{startAyah-endAyah}`
+  - Returns a range of ayahs from a surah
+  - Format: startAyah-endAyah (must be valid verse numbers)
+  - Example: `/surah/114/1-6`
+  - Error Handling:
+    - Returns 400 if range format is invalid
+    - Returns 404 if range exceeds surah length
+  - Response includes:
+    - Surah information
+    - Ayah range details (start, end, total)
+    - All verses in the range with Arabic text, transliteration, translation, and audio
 
 #### Juz Information
 - `GET /juz/{juz}`

@@ -38,10 +38,10 @@ class SurahHandler {
           currentPage: page,
           surahsPerPage: limit,
           hasNextPage: page < totalPages,
-          hasPrevPage: page > 1
+          hasPrevPage: page > 1,
         },
-        surahs: paginatedSurahs
-      }
+        surahs: paginatedSurahs,
+      },
     });
   }
 
@@ -72,8 +72,11 @@ class SurahHandler {
   static getAyahFromSurah(req, res) {
     const { surah, ayah } = req.params;
     const { data: quran } = require("../../data/quran.json");
-    const checkSurah = quran[surah - 1];
 
+    // Check if the ayah parameter contains a range (e.g., "1-6")
+    const isRange = ayah.includes("-");
+
+    const checkSurah = quran[surah - 1];
     if (!checkSurah) {
       return res.status(404).send({
         code: 404,
@@ -83,6 +86,78 @@ class SurahHandler {
       });
     }
 
+    // Handle range request
+    if (isRange) {
+      const [startAyah, endAyah] = ayah.split("-").map((num) => parseInt(num));
+
+      // Validate range numbers
+      if (
+        isNaN(startAyah) ||
+        isNaN(endAyah) ||
+        startAyah < 1 ||
+        endAyah < startAyah
+      ) {
+        return res.status(400).send({
+          code: 400,
+          status: "Bad Request.",
+          message:
+            "Invalid ayah range format. Use format: startAyah-endAyah (e.g., 1-6)",
+          data: {},
+        });
+      }
+
+      // Check if range exceeds surah length
+      if (
+        startAyah > checkSurah.verses.length ||
+        endAyah > checkSurah.verses.length
+      ) {
+        return res.status(404).send({
+          code: 404,
+          status: "Not Found.",
+          message: `Ayah range ${startAyah}-${endAyah} exceeds surah length (${checkSurah.verses.length} verses)`,
+          data: {},
+        });
+      }
+
+      // Get verses in range
+      const verses = checkSurah.verses
+        .slice(startAyah - 1, endAyah)
+        .map((verse) => ({
+          number: verse.number,
+          text: {
+            arab: verse.text.arab,
+            arabeng: verse.text.en,
+            translation: verse.text.translation,
+          },
+          audio: verse.audio.primary,
+        }));
+
+      const data = {
+        surah: {
+          number: checkSurah.number,
+          name: {
+            arab: checkSurah.name.long,
+            arabeng: checkSurah.name.transliteration,
+            translation: checkSurah.name.translation,
+          },
+        },
+        ayahRange: {
+          start: startAyah,
+          end: endAyah,
+          total: verses.length,
+        },
+        verses,
+      };
+
+      return res.status(200).send({
+        code: 200,
+        status: "OK.",
+        message: "Success fetching ayah range",
+        data,
+      });
+    }
+
+    // Handle single ayah request
     const checkAyah = checkSurah.verses[ayah - 1];
     if (!checkAyah) {
       return res.status(404).send({
@@ -93,18 +168,7 @@ class SurahHandler {
       });
     }
 
-    const dataSurah = { ...checkSurah };
-    delete dataSurah.verses;
-
     const data = {
-      surah: {
-        number: dataSurah.number,
-        name: {
-          arab: dataSurah.name.long,
-          arabeng: dataSurah.name.transliteration,
-          translation: dataSurah.name.translation,
-        },
-      },
       number: checkAyah.number,
       text: {
         arab: checkAyah.text.arab,
@@ -112,6 +176,14 @@ class SurahHandler {
         translation: checkAyah.text.translation,
       },
       audio: checkAyah.audio.primary,
+      surah: {
+        number: checkSurah.number,
+        name: {
+          arab: checkSurah.name.long,
+          arabeng: checkSurah.name.en,
+          translation: checkSurah.name.translation,
+        },
+      },
     };
 
     return res.status(200).send({
