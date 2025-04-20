@@ -3,7 +3,10 @@ const juzData = require('../lib/juz.js');
 class JuzHandler {
   static getJuz(req, res) {
     const { juz } = req.params;
-    const data = juzData(parseInt(juz));
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+
+    const data = juzData(parseInt(juz), page, limit);
 
     if (!data) {
       return res.status(404).send({

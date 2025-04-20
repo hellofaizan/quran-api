@@ -9,8 +9,7 @@
   "scripts": {
     "build": "npm install",
     "start": "node api/server.js",
-    "dev": "nodemon api/server.js",
-    "crawl": "node crawler/script.js"
+    "dev": "nodemon api/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -19,7 +18,6 @@
   },
   "devDependencies": {
     "eslint": "^8.17.0",
-    "isomorphic-fetch": "^3.0.0",
     "nodemon": "^3.1.0"
   }
 }
