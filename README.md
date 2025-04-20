@@ -1,9 +1,8 @@
-# Quran - API
+# Quran API
 
-> Quran API with media audio ***Syekh. Mishary Rashid Al-Afasy murrotal***.
+A simple Quran API built with Node.js and Express.js that provides access to Quranic verses, surahs, juz, and the 99 names of Allah.
 
-### Introduction
-This API data source comes from the combination of several parameters from [api.alquran.cloud](https://api.alquran.cloud) and [quran.kemenag.go.id](https://quran.kemenag.go.id) by merging its data to one JSON file with new structure for the better use and performance. Futhermore, this api uses indexed querying techniques with `0(1)` access time which is greatly affects performance.
+## Features
 
 ### Features
 - [x] Arabic Transliteration
@@ -13,6 +12,7 @@ This API data source comes from the combination of several parameters from [api.
 - [x] Pagination support for all endpoints
 - [x] Ayah range support
 - [x] Bearer token authentication
+- [x] Get all names of Allah
 - [ ] Tafsir surahs and verses
 
 ### Authentication
@@ -81,31 +81,74 @@ If no token is provided or if the format is incorrect, the API will respond with
   - Example: `/juz/30?page=1&limit=20`
   - Requires: Bearer token authentication
 
-### Response Format
+### Allah names
+- `GET /names`
+  - Returns first 30 names of Allah
+  - Query Parameters:
+    - `page` (optional, default: 1)
+    - `limit` (optional, default: 30)
+  - Example: `/names?page=1&limit=20`
+  - Requires: Bearer token authentication
 
-#### Pagination Structure
-All paginated endpoints include the following metadata:
+## Response Format
+
+### Success Response
 ```json
 {
-  "pagination": {
-    "totalItems": number,    // Total number of items (verses/surahs)
-    "totalPages": number,    // Total number of pages
-    "currentPage": number,   // Current page number
-    "itemsPerPage": number,  // Number of items per page
-    "hasNextPage": boolean,  // Whether there is a next page
-    "hasPrevPage": boolean   // Whether there is a previous page
+  "code": 200,
+  "status": "OK",
+  "message": "Success message",
+  "data": {
+    "pagination": {
+      "total": 100,
+      "per_page": 10,
+      "current_page": 1,
+      "last_page": 10,
+      "from": 1,
+      "to": 10
+    },
+    "results": []
   }
 }
 ```
 
-### Recommended fonts for Al-qur'an
-- [quran.musil.com](http://quran.mursil.com/Web-Print-Publishing-Quran-Text-Graphics-Fonts-and-Downloads/fonts-optimized-for-quran)
-- [Uthmani](https://groups.google.com/forum/#!topic/colteachers/Y6iKganK0tQ)
+### Error Response
+```json
+{
+  "code": 404,
+  "status": "Not Found",
+  "message": "Resource not found"
+}
+```
 
-### Available Commands
-- `yarn` = install all dependencies.
-- `yarn start` = run server.
-- `yarn dev` = run develop server.
+## Installation
 
-### LICENSE
-MIT
+1. Clone the repository
+```bash
+git clone https://github.com/hellofaizan/quran-api.git
+```
+
+2. Install dependencies
+```bash
+cd quran-api
+npm install
+```
+
+3. Start the server
+```bash
+npm start
+```
+
+The API will be available at `http://localhost:3000`
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Maintainer
+
+HelloFaizan (mohammadfaizan.in)
