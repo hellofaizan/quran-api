@@ -2,8 +2,9 @@ const { data: quran } = require("../../data/quran.json");
 
 const surahData = (_inputSurah, page = 1, limit = 10) => {
   const surah = quran[_inputSurah - 1];
-
   if (!surah) return null;
+
+  const verseCount = surah.verses ? surah.verses.length : 0;
 
   // Simplify verses to only include necessary information
   const simplifiedVerses = surah.verses.map((verse) => ({
@@ -41,6 +42,7 @@ const surahData = (_inputSurah, page = 1, limit = 10) => {
       hasPrevPage: page > 1,
     },
     verses: paginatedVerses,
+    verse_count: verseCount
   };
 
   return data;

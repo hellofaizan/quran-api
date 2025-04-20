@@ -8,6 +8,7 @@ class SurahHandler {
 
     const allSurahs = quran.map((item) => {
       const surah = { ...item };
+      const verseCount = surah.verses ? surah.verses.length : 0;
       delete surah.verses;
       delete surah.preBismillah;
       return {
@@ -18,6 +19,7 @@ class SurahHandler {
           translation: surah.name.translation,
         },
         revelation: surah.revelation.en,
+        verse_count: verseCount
       };
     });
 
