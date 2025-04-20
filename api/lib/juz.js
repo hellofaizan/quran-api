@@ -36,12 +36,10 @@ const juzData = (_inputJuz, page = 1, limit = 10) => {
     number: verse.number,
     text: {
       arab: verse.text.arab,
-      transliteration: verse.text.transliteration.en,
-      translation: verse.translation.en,
+      arabeng: verse.text.en,
+      translation: verse.text.translation,
     },
-    audio: {
-      primary: verse.audio.primary,
-    },
+    audio: verse.audio.primary,
   }));
 
   // Implement pagination
@@ -68,7 +66,7 @@ const juzData = (_inputJuz, page = 1, limit = 10) => {
       currentPage: page,
       versesPerPage: limit,
       hasNextPage: page < totalPages,
-      hasPrevPage: page > 1
+      hasPrevPage: page > 1,
     },
     verses: paginatedVerses,
   };

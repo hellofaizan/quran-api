@@ -16,18 +16,18 @@ router.get('/', (req, res) => res.status(200).send({
     listSurah: '/surah',
     spesificSurah: {
       pattern: '/surah/{surah}',
-      example: '/surah/18'
+      example: '/surah/18?page=1&limit=30'
     },
     spesificAyahInSurah: {
       pattern: '/surah/{surah}/{ayah}',
-      example: '/surah/18/60'
+      example: '/surah/18/60?page=1&limit=30'
     },
     spesificJuz: {
       pattern: '/juz/{juz}',
-      example: '/juz/30'
+      example: '/juz/30?page=1&limit=30'
     }
   },
-  maintaner: 'HelloFaizan <hellofaizan.tech>',
+  maintaner: 'HelloFaizan <mohammadfaizan.in>',
   source: 'https://github.com/hellofaizan/quran-api'
 }));
 
