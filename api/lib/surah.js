@@ -14,6 +14,7 @@ const surahData = (_inputSurah, page = 1, limit = 10) => {
       arab: verse.text.arab,
       arabeng: verse.text.en,
       translation: verse.text.translation,
+      urdu: verse.text.urdu
     },
     audio: verse.audio.primary,
   }));

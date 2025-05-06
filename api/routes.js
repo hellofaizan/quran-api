@@ -32,6 +32,9 @@ router.get('/', (req, res) => res.status(200).send({
       example: '/surah/114/1-6'
     },
     spesificJuz: {
+      pattern: '/juz/'
+    },
+    spesificJuz: {
       pattern: '/juz/{juz}',
       example: '/juz/30'
     }
