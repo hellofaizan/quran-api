@@ -5,6 +5,7 @@ const authMiddleware = require('./middlewares/auth');
 const SurahHandler = require('./handlers/surah');
 const JuzHandler = require('./handlers/juz');
 const NamesHandler = require('./handlers/names');
+const TodayVerseHandler = require('./handlers/todayverse');
 
 const router = Router();
 
@@ -59,6 +60,9 @@ router.get('/juz/:juz', caching, JuzHandler.getJuz);
 // Names routes
 router.get('/names', caching, NamesHandler.getAllNames);
 router.get('/names/:number', caching, NamesHandler.getNameByNumber);
+
+// Today Verse route
+router.get('/todayverse', caching, TodayVerseHandler.getTodayVerse);
 
 // fallback router
 router.all('*', (req, res) => res.status(404).send({
