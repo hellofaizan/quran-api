@@ -50,6 +50,7 @@ router.get('/', (req, res) => res.status(200).send({
 router.get('/surah', caching, SurahHandler.getAllSurah);
 router.get('/surah/:surah', caching, SurahHandler.getSurah);
 router.get('/surah/:surah/:ayah', caching, SurahHandler.getAyahFromSurah);
+router.get('/juz', caching, JuzHandler.getAllJuz);
 router.get('/juz/:juz', caching, JuzHandler.getJuz);
 
 // Names routes

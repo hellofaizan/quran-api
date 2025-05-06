@@ -1,336 +1,1476 @@
 {
-    "license": "(MIT) Ucok Isa Lubis <ulubis98@gmail.com>",
-    "source": "https://github.com/Ucok23/quran-data/blob/main/data/juz.json",
-    "data" : [
+  "license": "(MIT) Ucok Isa Lubis <ulubis98@gmail.com>",
+  "source": "https://github.com/Ucok23/quran-data/blob/main/data/juz.json",
+  "data": [
+    {
+      "index": 1,
+      "start": {
+        "index": 1,
+        "verse": 1
+      },
+      "end": {
+        "index": 2,
+        "verse": 141
+      },
+      "surahs": [
         {
-            "index": 1,
-            "start": {
-                "index": 1,
-                "verse": 1
-            },
-            "end": {
-                "index": 2,
-                "verse": 141
-            }
+          "number": 1,
+          "name": {
+            "arab": "سُورَةُ ٱلْفَاتِحَةِ",
+            "transliteration": "Al-Faatiha",
+            "translation": "The Opening"
+          }
         },
         {
-            "index": 2,
-            "start": {
-                "index": 2,
-                "verse": 142
-            },
-            "end": {
-                "index": 2,
-                "verse": 252
-            }
-        },
-        {
-            "index": 3,
-            "start": {
-                "index": 2,
-                "verse": 253
-            },
-            "end": {
-                "index": 3,
-                "verse": 92
-            }
-        },
-        {
-            "index": 4,
-            "start": {
-                "index": 3,
-                "verse": 93
-            },
-            "end": {
-                "index": 4,
-                "verse": 23
-            }
-        },
-        {
-            "index": 5,
-            "start": {
-                "index": 4,
-                "verse": 24
-            },
-            "end": {
-                "index": 4,
-                "verse": 147
-            }
-        },
-        {
-            "index": 6,
-            "start": {
-                "index": 4,
-                "verse": 148
-            },
-            "end": {
-                "index": 5,
-                "verse": 81
-            }
-        },
-        {
-            "index": 7,
-            "start": {
-                "index": 5,
-                "verse": 82
-            },
-            "end": {
-                "index": 6,
-                "verse": 110
-            }
-        },
-        {
-            "index": 8,
-            "start": {
-                "index": 6,
-                "verse": 111
-            },
-            "end": {
-                "index": 7,
-                "verse": 87
-            }
-        },
-        {
-            "index": 9,
-            "start": {
-                "index": 7,
-                "verse": 88
-            },
-            "end": {
-                "index": 8,
-                "verse": 40
-            }
-        },
-        {
-            "index": 10,
-            "start": {
-                "index": 8,
-                "verse": 41
-            },
-            "end": {
-                "index": 9,
-                "verse": 92
-            }
-        },
-        {
-            "index": 11,
-            "start": {
-                "index": 9,
-                "verse": 93
-            },
-            "end": {
-                "index": 11,
-                "verse": 5
-            }
-        },
-        {
-            "index": 12,
-            "start": {
-                "index": 11,
-                "verse": 6
-            },
-            "end": {
-                "index": 12,
-                "verse": 52
-            }
-        },
-        {
-            "index": 13,
-            "start": {
-                "index": 12,
-                "verse": 53
-            },
-            "end": {
-                "index": 14,
-                "verse": 52
-            }
-        },
-        {
-            "index": 14,
-            "start": {
-                "index": 15,
-                "verse": 1
-            },
-            "end": {
-                "index": 16,
-                "verse": 128
-            }
-        },
-        {
-            "index": 15,
-            "start": {
-                "index": 17,
-                "verse": 1
-            },
-            "end": {
-                "index": 18,
-                "verse": 74
-            }
-        },
-        {
-            "index": 16,
-            "start": {
-                "index":18,
-                "verse": 75
-            },
-            "end": {
-                "index": 20,
-                "verse": 135
-            }
-        },
-        {
-            "index": 17,
-            "start": {
-                "index": 21,
-                "verse": 1
-            },
-            "end": {
-                "index": 22,
-                "verse": 78
-            }
-        },
-        {
-            "index": 18,
-            "start": {
-                "index": 23,
-                "verse": 1
-            },
-            "end": {
-                "index": 25,
-                "verse": 20
-            }
-        },
-        {
-            "index": 19,
-            "start": {
-                "index": 25,
-                "verse": 21
-            },
-            "end": {
-                "index": 27,
-                "verse": 55
-            }
-        },
-        {
-            "index": 20,
-            "start": {
-                "index": 27,
-                "verse": 56
-            },
-            "end": {
-                "index": 29,
-                "verse": 45
-            }
-        },
-        {
-            "index": 21,
-            "start": {
-                "index": 29,
-                "verse": 46
-            },
-            "end": {
-                "index": 33,
-                "verse": 30
-            }
-        },
-        {
-            "index": 22,
-            "start": {
-                "index": 33,
-                "verse": 31
-            },
-            "end": {
-                "index": 36,
-                "verse": 27
-            }
-        },
-        {
-            "index": 23,
-            "start": {
-                "index": 36,
-                "verse": 28
-            },
-            "end": {
-                "index": 39,
-                "verse": 31
-            }
-        },
-        {
-            "index": 24,
-            "start": {
-                "index": 39,
-                "verse": 32
-            },
-            "end": {
-                "index": 41,
-                "verse": 46
-            }
-        },
-        {
-            "index": 25,
-            "start": {
-                "index": 41,
-                "verse": 47
-            },
-            "end": {
-                "index": 45,
-                "verse": 37
-            }
-        },
-        {
-            "index": 26,
-            "start": {
-                "index": 46,
-                "verse": 1
-            },
-            "end": {
-                "index": 51,
-                "verse": 30
-            }
-        },
-        {
-            "index": 27,
-            "start": {
-                "index": 51,
-                "verse": 31
-            },
-            "end": {
-                "index": 57,
-                "verse": 29
-            }
-        },
-        {
-            "index": 28,
-            "start": {
-                "index": 58,
-                "verse": 1
-            },
-            "end": {
-                "index": 66,
-                "verse": 12
-            }
-        },
-        {
-            "index": 29,
-            "start": {
-                "index": 67,
-                "verse": 1
-            },
-            "end": {
-                "index": 77,
-                "verse": 50
-            }
-        },
-        {
-            "index": 30,
-            "start": {
-                "index": 78,
-                "verse": 1
-            },
-            "end": {
-                "index": 114,
-                "verse": 6
-            }
+          "number": 2,
+          "name": {
+            "arab": "سورة البقرة",
+            "transliteration": "Al-Baqara",
+            "translation": "The Cow"
+          }
         }
-    ]
+      ]
+    },
+    {
+      "index": 2,
+      "start": {
+        "index": 2,
+        "verse": 142
+      },
+      "end": {
+        "index": 2,
+        "verse": 252
+      },
+      "surahs": [
+        {
+          "number": 2,
+          "name": {
+            "arab": "سورة البقرة",
+            "transliteration": "Al-Baqara",
+            "translation": "The Cow"
+          }
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "start": {
+        "index": 2,
+        "verse": 253
+      },
+      "end": {
+        "index": 3,
+        "verse": 92
+      },
+      "surahs": [
+        {
+          "number": 2,
+          "name": {
+            "arab": "سورة البقرة",
+            "transliteration": "Al-Baqara",
+            "translation": "The Cow"
+          }
+        },
+        {
+          "number": 3,
+          "name": {
+            "arab": "سورة آل عمران",
+            "transliteration": "Aal-i-Imraan",
+            "translation": "The Family of Imraan"
+          }
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "start": {
+        "index": 3,
+        "verse": 93
+      },
+      "end": {
+        "index": 4,
+        "verse": 23
+      },
+      "surahs": [
+        {
+          "number": 3,
+          "name": {
+            "arab": "سورة آل عمران",
+            "transliteration": "Aal-i-Imraan",
+            "translation": "The Family of Imraan"
+          }
+        },
+        {
+          "number": 4,
+          "name": {
+            "arab": "سورة النساء",
+            "transliteration": "An-Nisaa",
+            "translation": "The Women"
+          }
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "start": {
+        "index": 4,
+        "verse": 24
+      },
+      "end": {
+        "index": 4,
+        "verse": 147
+      },
+      "surahs": [
+        {
+          "number": 4,
+          "name": {
+            "arab": "سورة النساء",
+            "transliteration": "An-Nisaa",
+            "translation": "The Women"
+          }
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "start": {
+        "index": 4,
+        "verse": 148
+      },
+      "end": {
+        "index": 5,
+        "verse": 81
+      },
+      "surahs": [
+        {
+          "number": 4,
+          "name": {
+            "arab": "سورة النساء",
+            "transliteration": "An-Nisaa",
+            "translation": "The Women"
+          }
+        },
+        {
+          "number": 5,
+          "name": {
+            "arab": "سورة المائدة",
+            "transliteration": "Al-Maaida",
+            "translation": "The Table"
+          }
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "start": {
+        "index": 5,
+        "verse": 82
+      },
+      "end": {
+        "index": 6,
+        "verse": 110
+      },
+      "surahs": [
+        {
+          "number": 5,
+          "name": {
+            "arab": "سورة المائدة",
+            "transliteration": "Al-Maaida",
+            "translation": "The Table"
+          }
+        },
+        {
+          "number": 6,
+          "name": {
+            "arab": "سورة الأنعام",
+            "transliteration": "Al-An'aam",
+            "translation": "The Cattle"
+          }
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "start": {
+        "index": 6,
+        "verse": 111
+      },
+      "end": {
+        "index": 7,
+        "verse": 87
+      },
+      "surahs": [
+        {
+          "number": 6,
+          "name": {
+            "arab": "سورة الأنعام",
+            "transliteration": "Al-An'aam",
+            "translation": "The Cattle"
+          }
+        },
+        {
+          "number": 7,
+          "name": {
+            "arab": "سورة الأعراف",
+            "transliteration": "Al-A'raaf",
+            "translation": "The Heights"
+          }
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "start": {
+        "index": 7,
+        "verse": 88
+      },
+      "end": {
+        "index": 8,
+        "verse": 40
+      },
+      "surahs": [
+        {
+          "number": 7,
+          "name": {
+            "arab": "سورة الأعراف",
+            "transliteration": "Al-A'raaf",
+            "translation": "The Heights"
+          }
+        },
+        {
+          "number": 8,
+          "name": {
+            "arab": "سورة الأنفال",
+            "transliteration": "Al-Anfaal",
+            "translation": "The Spoils of War"
+          }
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "start": {
+        "index": 8,
+        "verse": 41
+      },
+      "end": {
+        "index": 9,
+        "verse": 92
+      },
+      "surahs": [
+        {
+          "number": 8,
+          "name": {
+            "arab": "سورة الأنفال",
+            "transliteration": "Al-Anfaal",
+            "translation": "The Spoils of War"
+          }
+        },
+        {
+          "number": 9,
+          "name": {
+            "arab": "سورة التوبة",
+            "transliteration": "At-Tawba",
+            "translation": "The Repentance"
+          }
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "start": {
+        "index": 9,
+        "verse": 93
+      },
+      "end": {
+        "index": 11,
+        "verse": 5
+      },
+      "surahs": [
+        {
+          "number": 9,
+          "name": {
+            "arab": "سورة التوبة",
+            "transliteration": "At-Tawba",
+            "translation": "The Repentance"
+          }
+        },
+        {
+          "number": 10,
+          "name": {
+            "arab": "سورة يونس",
+            "transliteration": "Yunus",
+            "translation": "Jonas"
+          }
+        },
+        {
+          "number": 11,
+          "name": {
+            "arab": "سورة هود",
+            "transliteration": "Hud",
+            "translation": "Hud"
+          }
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "start": {
+        "index": 11,
+        "verse": 6
+      },
+      "end": {
+        "index": 12,
+        "verse": 52
+      },
+      "surahs": [
+        {
+          "number": 11,
+          "name": {
+            "arab": "سورة هود",
+            "transliteration": "Hud",
+            "translation": "Hud"
+          }
+        },
+        {
+          "number": 12,
+          "name": {
+            "arab": "سورة يوسف",
+            "transliteration": "Yusuf",
+            "translation": "Joseph"
+          }
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "start": {
+        "index": 12,
+        "verse": 53
+      },
+      "end": {
+        "index": 14,
+        "verse": 52
+      },
+      "surahs": [
+        {
+          "number": 12,
+          "name": {
+            "arab": "سورة يوسف",
+            "transliteration": "Yusuf",
+            "translation": "Joseph"
+          }
+        },
+        {
+          "number": 13,
+          "name": {
+            "arab": "سورة الرعد",
+            "transliteration": "Ar-Ra'd",
+            "translation": "The Thunder"
+          }
+        },
+        {
+          "number": 14,
+          "name": {
+            "arab": "سورة ابراهيم",
+            "transliteration": "Ibrahim",
+            "translation": "Abraham"
+          }
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "start": {
+        "index": 15,
+        "verse": 1
+      },
+      "end": {
+        "index": 16,
+        "verse": 128
+      },
+      "surahs": [
+        {
+          "number": 15,
+          "name": {
+            "arab": "سورة الحجر",
+            "transliteration": "Al-Hijr",
+            "translation": "The Rock"
+          }
+        },
+        {
+          "number": 16,
+          "name": {
+            "arab": "سورة النحل",
+            "transliteration": "An-Nahl",
+            "translation": "The Bee"
+          }
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "start": {
+        "index": 17,
+        "verse": 1
+      },
+      "end": {
+        "index": 18,
+        "verse": 74
+      },
+      "surahs": [
+        {
+          "number": 17,
+          "name": {
+            "arab": "سورة الإسراء",
+            "transliteration": "Al-Israa",
+            "translation": "The Night Journey"
+          }
+        },
+        {
+          "number": 18,
+          "name": {
+            "arab": "سورة الكهف",
+            "transliteration": "Al-Kahf",
+            "translation": "The Cave"
+          }
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "start": {
+        "index": 18,
+        "verse": 75
+      },
+      "end": {
+        "index": 20,
+        "verse": 135
+      },
+      "surahs": [
+        {
+          "number": 18,
+          "name": {
+            "arab": "سورة الكهف",
+            "transliteration": "Al-Kahf",
+            "translation": "The Cave"
+          }
+        },
+        {
+          "number": 19,
+          "name": {
+            "arab": "سورة مريم",
+            "transliteration": "Maryam",
+            "translation": "Mary"
+          }
+        },
+        {
+          "number": 20,
+          "name": {
+            "arab": "سورة طه",
+            "transliteration": "Taa-Haa",
+            "translation": "Taa-Haa"
+          }
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "start": {
+        "index": 21,
+        "verse": 1
+      },
+      "end": {
+        "index": 22,
+        "verse": 78
+      },
+      "surahs": [
+        {
+          "number": 21,
+          "name": {
+            "arab": "سورة الأنبياء",
+            "transliteration": "Al-Anbiyaa",
+            "translation": "The Prophets"
+          }
+        },
+        {
+          "number": 22,
+          "name": {
+            "arab": "سورة الحج",
+            "transliteration": "Al-Hajj",
+            "translation": "The Pilgrimage"
+          }
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "start": {
+        "index": 23,
+        "verse": 1
+      },
+      "end": {
+        "index": 25,
+        "verse": 20
+      },
+      "surahs": [
+        {
+          "number": 23,
+          "name": {
+            "arab": "سورة المؤمنون",
+            "transliteration": "Al-Muminoon",
+            "translation": "The Believers"
+          }
+        },
+        {
+          "number": 24,
+          "name": {
+            "arab": "سورة النور",
+            "transliteration": "An-Noor",
+            "translation": "The Light"
+          }
+        },
+        {
+          "number": 25,
+          "name": {
+            "arab": "سورة الفرقان",
+            "transliteration": "Al-Furqaan",
+            "translation": "The Criterion"
+          }
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "start": {
+        "index": 25,
+        "verse": 21
+      },
+      "end": {
+        "index": 27,
+        "verse": 55
+      },
+      "surahs": [
+        {
+          "number": 25,
+          "name": {
+            "arab": "سورة الفرقان",
+            "transliteration": "Al-Furqaan",
+            "translation": "The Criterion"
+          }
+        },
+        {
+          "number": 26,
+          "name": {
+            "arab": "سورة الشعراء",
+            "transliteration": "Ash-Shu'araa",
+            "translation": "The Poets"
+          }
+        },
+        {
+          "number": 27,
+          "name": {
+            "arab": "سورة النمل",
+            "transliteration": "An-Naml",
+            "translation": "The Ant"
+          }
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "start": {
+        "index": 27,
+        "verse": 56
+      },
+      "end": {
+        "index": 29,
+        "verse": 45
+      },
+      "surahs": [
+        {
+          "number": 27,
+          "name": {
+            "arab": "سورة النمل",
+            "transliteration": "An-Naml",
+            "translation": "The Ant"
+          }
+        },
+        {
+          "number": 28,
+          "name": {
+            "arab": "سورة القصص",
+            "transliteration": "Al-Qasas",
+            "translation": "The Stories"
+          }
+        },
+        {
+          "number": 29,
+          "name": {
+            "arab": "سورة العنكبوت",
+            "transliteration": "Al-Ankaboot",
+            "translation": "The Spider"
+          }
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "start": {
+        "index": 29,
+        "verse": 46
+      },
+      "end": {
+        "index": 33,
+        "verse": 30
+      },
+      "surahs": [
+        {
+          "number": 29,
+          "name": {
+            "arab": "سورة العنكبوت",
+            "transliteration": "Al-Ankaboot",
+            "translation": "The Spider"
+          }
+        },
+        {
+          "number": 30,
+          "name": {
+            "arab": "سورة الروم",
+            "transliteration": "Ar-Room",
+            "translation": "The Romans"
+          }
+        },
+        {
+          "number": 31,
+          "name": {
+            "arab": "سورة لقمان",
+            "transliteration": "Luqman",
+            "translation": "Luqman"
+          }
+        },
+        {
+          "number": 32,
+          "name": {
+            "arab": "سورة السجدة",
+            "transliteration": "As-Sajda",
+            "translation": "The Prostration"
+          }
+        },
+        {
+          "number": 33,
+          "name": {
+            "arab": "سورة الأحزاب",
+            "transliteration": "Al-Ahzaab",
+            "translation": "The Clans"
+          }
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "start": {
+        "index": 33,
+        "verse": 31
+      },
+      "end": {
+        "index": 36,
+        "verse": 27
+      },
+      "surahs": [
+        {
+          "number": 33,
+          "name": {
+            "arab": "سورة الأحزاب",
+            "transliteration": "Al-Ahzaab",
+            "translation": "The Clans"
+          }
+        },
+        {
+          "number": 34,
+          "name": {
+            "arab": "سورة سَبَأ",
+            "transliteration": "Saba",
+            "translation": "Sheba"
+          }
+        },
+        {
+          "number": 35,
+          "name": {
+            "arab": "سورة فاطر",
+            "transliteration": "Faatir",
+            "translation": "The Originator"
+          }
+        },
+        {
+          "number": 36,
+          "name": {
+            "arab": "سورة يس",
+            "transliteration": "Yaseen",
+            "translation": "Yaseen"
+          }
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "start": {
+        "index": 36,
+        "verse": 28
+      },
+      "end": {
+        "index": 39,
+        "verse": 31
+      },
+      "surahs": [
+        {
+          "number": 36,
+          "name": {
+            "arab": "سورة يس",
+            "transliteration": "Yaseen",
+            "translation": "Yaseen"
+          }
+        },
+        {
+          "number": 37,
+          "name": {
+            "arab": "سورة الصافات",
+            "transliteration": "As-Saaffaat",
+            "translation": "Those drawn up in Ranks"
+          }
+        },
+        {
+          "number": 38,
+          "name": {
+            "arab": "سورة ص",
+            "transliteration": "Saad",
+            "translation": "The letter Saad"
+          }
+        },
+        {
+          "number": 39,
+          "name": {
+            "arab": "سورة الزمر",
+            "transliteration": "Az-Zumar",
+            "translation": "The Groups"
+          }
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "start": {
+        "index": 39,
+        "verse": 32
+      },
+      "end": {
+        "index": 41,
+        "verse": 46
+      },
+      "surahs": [
+        {
+          "number": 39,
+          "name": {
+            "arab": "سورة الزمر",
+            "transliteration": "Az-Zumar",
+            "translation": "The Groups"
+          }
+        },
+        {
+          "number": 40,
+          "name": {
+            "arab": "سورة غافر",
+            "transliteration": "Ghafir",
+            "translation": "The Forgiver"
+          }
+        },
+        {
+          "number": 41,
+          "name": {
+            "arab": "سورة فصلت",
+            "transliteration": "Fussilat",
+            "translation": "Explained in detail"
+          }
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "start": {
+        "index": 41,
+        "verse": 47
+      },
+      "end": {
+        "index": 45,
+        "verse": 37
+      },
+      "surahs": [
+        {
+          "number": 41,
+          "name": {
+            "arab": "سورة فصلت",
+            "transliteration": "Fussilat",
+            "translation": "Explained in detail"
+          }
+        },
+        {
+          "number": 42,
+          "name": {
+            "arab": "سورة الشورى",
+            "transliteration": "Ash-Shura",
+            "translation": "Consultation"
+          }
+        },
+        {
+          "number": 43,
+          "name": {
+            "arab": "سورة الزخرف",
+            "transliteration": "Az-Zukhruf",
+            "translation": "Ornaments of gold"
+          }
+        },
+        {
+          "number": 44,
+          "name": {
+            "arab": "سورة الدخان",
+            "transliteration": "Ad-Dukhaan",
+            "translation": "The Smoke"
+          }
+        },
+        {
+          "number": 45,
+          "name": {
+            "arab": "سورة الجاثية",
+            "transliteration": "Al-Jaathiya",
+            "translation": "Crouching"
+          }
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "start": {
+        "index": 46,
+        "verse": 1
+      },
+      "end": {
+        "index": 51,
+        "verse": 30
+      },
+      "surahs": [
+        {
+          "number": 46,
+          "name": {
+            "arab": "سورة الأحقاف",
+            "transliteration": "Al-Ahqaf",
+            "translation": "The Dunes"
+          }
+        },
+        {
+          "number": 47,
+          "name": {
+            "arab": "سورة محمد",
+            "transliteration": "Muhammad",
+            "translation": "Muhammad"
+          }
+        },
+        {
+          "number": 48,
+          "name": {
+            "arab": "سورة الفتح",
+            "transliteration": "Al-Fath",
+            "translation": "The Victory"
+          }
+        },
+        {
+          "number": 49,
+          "name": {
+            "arab": "سورة الحجرات",
+            "transliteration": "Al-Hujuraat",
+            "translation": "The Inner Apartments"
+          }
+        },
+        {
+          "number": 50,
+          "name": {
+            "arab": "سورة ق",
+            "transliteration": "Qaaf",
+            "translation": "The letter Qaaf"
+          }
+        },
+        {
+          "number": 51,
+          "name": {
+            "arab": "سورة الذاريات",
+            "transliteration": "Adh-Dhaariyat",
+            "translation": "The Winnowing Winds"
+          }
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "start": {
+        "index": 51,
+        "verse": 31
+      },
+      "end": {
+        "index": 57,
+        "verse": 29
+      },
+      "surahs": [
+        {
+          "number": 51,
+          "name": {
+            "arab": "سورة الذاريات",
+            "transliteration": "Adh-Dhaariyat",
+            "translation": "The Winnowing Winds"
+          }
+        },
+        {
+          "number": 52,
+          "name": {
+            "arab": "سورة الطور",
+            "transliteration": "At-Tur",
+            "translation": "The Mount"
+          }
+        },
+        {
+          "number": 53,
+          "name": {
+            "arab": "سورة النجم",
+            "transliteration": "An-Najm",
+            "translation": "The Star"
+          }
+        },
+        {
+          "number": 54,
+          "name": {
+            "arab": "سورة القمر",
+            "transliteration": "Al-Qamar",
+            "translation": "The Moon"
+          }
+        },
+        {
+          "number": 55,
+          "name": {
+            "arab": "سورة الرحمن",
+            "transliteration": "Ar-Rahmaan",
+            "translation": "The Beneficent"
+          }
+        },
+        {
+          "number": 56,
+          "name": {
+            "arab": "سورة الواقعة",
+            "transliteration": "Al-Waaqia",
+            "translation": "The Inevitable"
+          }
+        },
+        {
+          "number": 57,
+          "name": {
+            "arab": "سورة الحديد",
+            "transliteration": "Al-Hadid",
+            "translation": "The Iron"
+          }
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "start": {
+        "index": 58,
+        "verse": 1
+      },
+      "end": {
+        "index": 66,
+        "verse": 12
+      },
+      "surahs": [
+        {
+          "number": 58,
+          "name": {
+            "arab": "سورة المجادلة",
+            "transliteration": "Al-Mujaadila",
+            "translation": "The Pleading Woman"
+          }
+        },
+        {
+          "number": 59,
+          "name": {
+            "arab": "سورة الحشر",
+            "transliteration": "Al-Hashr",
+            "translation": "The Exile"
+          }
+        },
+        {
+          "number": 60,
+          "name": {
+            "arab": "سورة الممتحنة",
+            "transliteration": "Al-Mumtahana",
+            "translation": "She that is to be examined"
+          }
+        },
+        {
+          "number": 61,
+          "name": {
+            "arab": "سورة الصف",
+            "transliteration": "As-Saff",
+            "translation": "The Ranks"
+          }
+        },
+        {
+          "number": 62,
+          "name": {
+            "arab": "سورة الجمعة",
+            "transliteration": "Al-Jumu'a",
+            "translation": "Friday"
+          }
+        },
+        {
+          "number": 63,
+          "name": {
+            "arab": "سورة المنافقون",
+            "transliteration": "Al-Munaafiqoon",
+            "translation": "The Hypocrites"
+          }
+        },
+        {
+          "number": 64,
+          "name": {
+            "arab": "سورة التغابن",
+            "transliteration": "At-Taghaabun",
+            "translation": "Mutual Disillusion"
+          }
+        },
+        {
+          "number": 65,
+          "name": {
+            "arab": "سورة الطلاق",
+            "transliteration": "At-Talaaq",
+            "translation": "Divorce"
+          }
+        },
+        {
+          "number": 66,
+          "name": {
+            "arab": "سورة التحريم",
+            "transliteration": "At-Tahrim",
+            "translation": "The Prohibition"
+          }
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "start": {
+        "index": 67,
+        "verse": 1
+      },
+      "end": {
+        "index": 77,
+        "verse": 50
+      },
+      "surahs": [
+        {
+          "number": 67,
+          "name": {
+            "arab": "سورة الملك",
+            "transliteration": "Al-Mulk",
+            "translation": "The Sovereignty"
+          }
+        },
+        {
+          "number": 68,
+          "name": {
+            "arab": "سورة القلم",
+            "transliteration": "Al-Qalam",
+            "translation": "The Pen"
+          }
+        },
+        {
+          "number": 69,
+          "name": {
+            "arab": "سورة الحاقة",
+            "transliteration": "Al-Haaqqa",
+            "translation": "The Reality"
+          }
+        },
+        {
+          "number": 70,
+          "name": {
+            "arab": "سورة المعارج",
+            "transliteration": "Al-Ma'aarij",
+            "translation": "The Ascending Stairways"
+          }
+        },
+        {
+          "number": 71,
+          "name": {
+            "arab": "سورة نوح",
+            "transliteration": "Nooh",
+            "translation": "Noah"
+          }
+        },
+        {
+          "number": 72,
+          "name": {
+            "arab": "سورة الجن",
+            "transliteration": "Al-Jinn",
+            "translation": "The Jinn"
+          }
+        },
+        {
+          "number": 73,
+          "name": {
+            "arab": "سورة المزمل",
+            "transliteration": "Al-Muzzammil",
+            "translation": "The Enshrouded One"
+          }
+        },
+        {
+          "number": 74,
+          "name": {
+            "arab": "سورة المدثر",
+            "transliteration": "Al-Muddaththir",
+            "translation": "The Cloaked One"
+          }
+        },
+        {
+          "number": 75,
+          "name": {
+            "arab": "سورة القيامة",
+            "transliteration": "Al-Qiyaama",
+            "translation": "The Resurrection"
+          }
+        },
+        {
+          "number": 76,
+          "name": {
+            "arab": "سورة الانسان",
+            "transliteration": "Al-Insaan",
+            "translation": "Man"
+          }
+        },
+        {
+          "number": 77,
+          "name": {
+            "arab": "سورة المرسلات",
+            "transliteration": "Al-Mursalaat",
+            "translation": "The Emissaries"
+          }
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "start": {
+        "index": 78,
+        "verse": 1
+      },
+      "end": {
+        "index": 114,
+        "verse": 6
+      },
+      "surahs": [
+        {
+          "number": 78,
+          "name": {
+            "arab": "سورة النبأ",
+            "transliteration": "An-Naba",
+            "translation": "The Announcement"
+          }
+        },
+        {
+          "number": 79,
+          "name": {
+            "arab": "سورة النازعات",
+            "transliteration": "An-Naazi'aat",
+            "translation": "Those who drag forth"
+          }
+        },
+        {
+          "number": 80,
+          "name": {
+            "arab": "سورة عبس",
+            "transliteration": "Abasa",
+            "translation": "He frowned"
+          }
+        },
+        {
+          "number": 81,
+          "name": {
+            "arab": "سورة التكوير",
+            "transliteration": "At-Takwir",
+            "translation": "The Overthrowing"
+          }
+        },
+        {
+          "number": 82,
+          "name": {
+            "arab": "سورة الإنفطار",
+            "transliteration": "Al-Infitaar",
+            "translation": "The Cleaving"
+          }
+        },
+        {
+          "number": 83,
+          "name": {
+            "arab": "سورة المطففين",
+            "transliteration": "Al-Mutaffifin",
+            "translation": "Defrauding"
+          }
+        },
+        {
+          "number": 84,
+          "name": {
+            "arab": "سورة الإنشقاق",
+            "transliteration": "Al-Inshiqaaq",
+            "translation": "The Splitting Open"
+          }
+        },
+        {
+          "number": 85,
+          "name": {
+            "arab": "سورة البروج",
+            "transliteration": "Al-Burooj",
+            "translation": "The Constellations"
+          }
+        },
+        {
+          "number": 86,
+          "name": {
+            "arab": "سورة الطارق",
+            "transliteration": "At-Taariq",
+            "translation": "The Morning Star"
+          }
+        },
+        {
+          "number": 87,
+          "name": {
+            "arab": "سورة الأعلى",
+            "transliteration": "Al-A'laa",
+            "translation": "The Most High"
+          }
+        },
+        {
+          "number": 88,
+          "name": {
+            "arab": "سورة الغاشية",
+            "transliteration": "Al-Ghaashiya",
+            "translation": "The Overwhelming"
+          }
+        },
+        {
+          "number": 89,
+          "name": {
+            "arab": "سورة الفجر",
+            "transliteration": "Al-Fajr",
+            "translation": "The Dawn"
+          }
+        },
+        {
+          "number": 90,
+          "name": {
+            "arab": "سورة البلد",
+            "transliteration": "Al-Balad",
+            "translation": "The City"
+          }
+        },
+        {
+          "number": 91,
+          "name": {
+            "arab": "سورة الشمس",
+            "transliteration": "Ash-Shams",
+            "translation": "The Sun"
+          }
+        },
+        {
+          "number": 92,
+          "name": {
+            "arab": "سورة الليل",
+            "transliteration": "Al-Lail",
+            "translation": "The Night"
+          }
+        },
+        {
+          "number": 93,
+          "name": {
+            "arab": "سورة الضحى",
+            "transliteration": "Ad-Dhuhaa",
+            "translation": "The Morning Hours"
+          }
+        },
+        {
+          "number": 94,
+          "name": {
+            "arab": "سورة الشرح",
+            "transliteration": "Ash-Sharh",
+            "translation": "The Consolation"
+          }
+        },
+        {
+          "number": 95,
+          "name": {
+            "arab": "سورة التين",
+            "transliteration": "At-Tin",
+            "translation": "The Fig"
+          }
+        },
+        {
+          "number": 96,
+          "name": {
+            "arab": "سورة العلق",
+            "transliteration": "Al-Alaq",
+            "translation": "The Clot"
+          }
+        },
+        {
+          "number": 97,
+          "name": {
+            "arab": "سورة القدر",
+            "transliteration": "Al-Qadr",
+            "translation": "The Power, Fate"
+          }
+        },
+        {
+          "number": 98,
+          "name": {
+            "arab": "سورة البينة",
+            "transliteration": "Al-Bayyina",
+            "translation": "The Evidence"
+          }
+        },
+        {
+          "number": 99,
+          "name": {
+            "arab": "سورة الزلزلة",
+            "transliteration": "Az-Zalzala",
+            "translation": "The Earthquake"
+          }
+        },
+        {
+          "number": 100,
+          "name": {
+            "arab": "سورة العاديات",
+            "transliteration": "Al-Aadiyaat",
+            "translation": "The Chargers"
+          }
+        },
+        {
+          "number": 101,
+          "name": {
+            "arab": "سورة القارعة",
+            "transliteration": "Al-Qaari'a",
+            "translation": "The Calamity"
+          }
+        },
+        {
+          "number": 102,
+          "name": {
+            "arab": "سورة التكاثر",
+            "transliteration": "At-Takaathur",
+            "translation": "Competition"
+          }
+        },
+        {
+          "number": 103,
+          "name": {
+            "arab": "سورة العصر",
+            "transliteration": "Al-Asr",
+            "translation": "The Declining Day, Epoch"
+          }
+        },
+        {
+          "number": 104,
+          "name": {
+            "arab": "سورة الهمزة",
+            "transliteration": "Al-Humaza",
+            "translation": "The Traducer"
+          }
+        },
+        {
+          "number": 105,
+          "name": {
+            "arab": "سورة الفيل",
+            "transliteration": "Al-Fil",
+            "translation": "The Elephant"
+          }
+        },
+        {
+          "number": 106,
+          "name": {
+            "arab": "سورة قريش",
+            "transliteration": "Quraish",
+            "translation": "Quraysh"
+          }
+        },
+        {
+          "number": 107,
+          "name": {
+            "arab": "سورة الماعون",
+            "transliteration": "Al-Maa'un",
+            "translation": "Almsgiving"
+          }
+        },
+        {
+          "number": 108,
+          "name": {
+            "arab": "سورة الكوثر",
+            "transliteration": "Al-Kawthar",
+            "translation": "Abundance"
+          }
+        },
+        {
+          "number": 109,
+          "name": {
+            "arab": "سورة الكافرون",
+            "transliteration": "Al-Kaafiroon",
+            "translation": "The Disbelievers"
+          }
+        },
+        {
+          "number": 110,
+          "name": {
+            "arab": "سورة النصر",
+            "transliteration": "An-Nasr",
+            "translation": "Divine Support"
+          }
+        },
+        {
+          "number": 111,
+          "name": {
+            "arab": "سورة المسد",
+            "transliteration": "Al-Masad",
+            "translation": "The Palm Fibre"
+          }
+        },
+        {
+          "number": 112,
+          "name": {
+            "arab": "سورة الإخلاص",
+            "transliteration": "Al-Ikhlaas",
+            "translation": "Sincerity"
+          }
+        },
+        {
+          "number": 113,
+          "name": {
+            "arab": "سورة الفلق",
+            "transliteration": "Al-Falaq",
+            "translation": "The Dawn"
+          }
+        },
+        {
+          "number": 114,
+          "name": {
+            "arab": "سورة الناس",
+            "transliteration": "An-Naas",
+            "translation": "Mankind"
+          }
+        }
+      ]
+    }
+  ]
 }
